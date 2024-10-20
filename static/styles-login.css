@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(94, 94, 182), rgb(10, 10, 89));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container, .register-container {
+    width: 100%;
+    max-width: 400px; 
+    background-color: rgba(63, 95, 175, 0.2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 450px) {
+    .login-container, .register-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
